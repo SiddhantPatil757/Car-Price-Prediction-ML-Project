@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+</head>
+<body>
+
+    <h2>Car Price Prediction</h2>
+
+    <form action="/predict_form" method="post">
+
+        <label>Original Car Price (in Lakhs):</label><br>
+        <input type="number" step="any" name="present_price"><br><br>
+
+        <label>Kms Driven:</label><br>
+        <input type="number" name="kms_driven"><br><br>
+
+        <label>Fuel Type (0=Petrol,1=Diesel,2=CNG):</label><br>
+        <input type="number" name="fuel_type"><br><br>
+
+        <label>Seller Type (0=Dealer,1=Individual):</label><br>
+        <input type="number" name="seller_type"><br><br>
+
+        <label>Transmission (0=Manual,1=Automatic):</label><br>
+        <input type="number" name="transmission"><br><br>
+
+        <label>Owner:</label><br>
+        <input type="number" name="owner"><br><br>
+
+        <label>Car Age:</label><br>
+        <input type="number" name="car_age"><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
