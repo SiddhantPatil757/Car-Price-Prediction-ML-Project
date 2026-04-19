@@ -45,5 +45,5 @@ To build a machine learning model that accurately predicts the price of used car
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-link>
+git clone < https://github.com/SiddhantPatil757/Car-Predictions-ML-Project.git >
 cd car-price-prediction
